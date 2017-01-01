@@ -1,0 +1,34 @@
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias v='/Applications/MacVim.app/Contents/MacOS/Vim'
+
+alias restart='exec -l $SHELL'
+
+alias gp='git push'
+alias gcm='git commit -m'
+alias gall='git add --all'
+alias bp='vim ~/.bash_profile'
+
+alias l='ls'
+
+c() {
+  cd "$1"
+}
+
+gl() {
+  git log --"$1"
+}
+
+alias e='exit'
+
+
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
+nvm use v7.3.0
+
+alias crypto='c /Users/anthonyzotti/Desktop/projects/SFE-Packages/packages/symphony-crypto-client-service/src'
+alias clr='c /Users/anthonyzotti/Desktop/projects/SFE-Client-App'
+alias gs='git status'
+alias packages='/Users/anthonyzotti/Desktop/projects/SFE-Packages'
+alias gcan='git commit --amend --no-edit'
+alias gpf='git push --force'
+alias cryptoLib='c /Users/anthonyzotti/Desktop/projects/SFE-CryptoLib-JS'
