@@ -1,2 +1,16 @@
-set number
-set clipboard=unnamed
+set nocompatible
+set shiftwidth=4
+set tabstop=4
+
+let mapleader=","
+
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
+filetype plugin indent on
+
+" Local config
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
